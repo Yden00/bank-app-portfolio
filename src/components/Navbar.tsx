@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import close from "../assets/close.png";
-import logo from "../assets/logo.png";
-import menu from "../assets/menu.png";
+import close from "../assets/close.svg";
+import logo from "../assets/logo.svg";
+import menu from "../assets/menu.svg";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
