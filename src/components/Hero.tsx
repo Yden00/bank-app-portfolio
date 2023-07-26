@@ -1,9 +1,10 @@
-import styles from "../style";
-import discount from "../assets/Discount.svg";
-import robot from '../assets/robot.png'
-import GetStarted from "./GetStarted";
+import React from 'react';
+import styles from '../style';
+import discount from '../assets/Discount.svg';
+import robot from '../assets/robot.png';
+import GetStarted from './GetStarted';
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
