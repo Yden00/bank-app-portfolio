@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import close from '../assets/close.svg';
 import logo from '../assets/logo.svg';
 import menu from '../assets/menu.svg';
-import { navLinks, NavLink } from '../constants';
+import { navLinks } from '../constants';
 
 const Navbar: React.FC = () => {
   const [active, setActive] = useState<string>('Home');
@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
       <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {navLinks.map((nav: NavLink, index: number) => (
+        {navLinks.map((nav, index: number) => (
           <li
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
           } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
-            {navLinks.map((nav: NavLink, index: number) => (
+            {navLinks.map((nav, index: number) => (
               <li
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${

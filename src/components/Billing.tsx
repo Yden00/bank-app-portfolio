@@ -1,5 +1,7 @@
 import React from 'react';
-import { apple, bill, google } from '../assets';
+import apple from '../assets/apple.svg'
+import google from '../assets/google.svg';
+import bill from '../assets/bill.png'
 import styles, { layout } from '../style'; // Update the file extension based on your style file type.
 
 const Billing: React.FC = () => (

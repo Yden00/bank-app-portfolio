@@ -1,5 +1,5 @@
 import React from 'react';
-import { feedback, FeedbackCardData } from '../constants';
+import { feedback } from '../constants';
 import styles from '../style';
 import FeedbackCard from './FeedbackCard';
 
@@ -20,7 +20,7 @@ const Testimonials: React.FC = () => (
     </div>
 
     <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
-      {feedback.map((card: FeedbackCardData) => <FeedbackCard key={card.id} {...card} />)}
+      {feedback.map((card) => <FeedbackCard key={card.id} {...card} />)}
     </div>
   </section>
 );
